@@ -34,6 +34,7 @@ class LoginForm extends React.Component {
             <div className="row d-flex justify-content-center">
                 <div className="col-md-6">
                     <div className="card px-5 py-5" id="form1">
+                        <div className='card-body'>
                         <form onSubmit={this.handleSubmit}>
                         <div className="mb-3">
                         <label className="form-label">Usuario</label>
@@ -43,8 +44,9 @@ class LoginForm extends React.Component {
                         <label className="form-label">Password</label>
                         <input type="password" value={this.state.password} onChange={this.handlePassword} className="form-control" id="exampleInputPassword1"/>
                         </div>
-                        <button type="submit" className="btn btn-outline-primary">Ingresar</button>
+                        <button type="submit" className="btn btn-outline-primary">Ingresar al Sistema</button>
                         </form>
+                        </div>
                     </div>
                 </div>
             </div>
